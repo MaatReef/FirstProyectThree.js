@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.Js 🔥</title>
+    <link rel="icon" type="image/png" href="./img/Iconos/logo.png" sizes="32x32">
+    <style>
+        body { box-sizing: border-box; margin: 0; background-color: rgba(173, 6, 6, 0.071);}
+    </style>
+</head>
+<body>
+    <canvas id="webgl"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+    integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+    crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+        "three/jsm/": "https://threejs.org/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" async src="js/index.js"></script>
+</body>
+</html>
