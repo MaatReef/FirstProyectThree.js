@@ -4,6 +4,10 @@ import { FontLoader } from 'three/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/jsm/geometries/TextGeometry.js'; // to step 11
 import * as TWEEN  from 'https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.esm.js';
 
+let ambiente = new Howl({
+  src: "music/ambiente.mp3",
+  volume: 0.2,
+});
 let disparo = new Howl({
   src: "music/disparo.mp3",
   volume: 0.2,
@@ -12,6 +16,8 @@ let explosionSound = new Howl({
   src: "music/explosion.mp3",
   volume: 0.3,
 });
+
+ambiente.play();
 
 var WIDTH = window.innerWidth;
 var HEIGHT = window.innerHeight;
